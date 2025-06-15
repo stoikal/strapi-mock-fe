@@ -1,5 +1,6 @@
 import Articles from "@/services/articles";
-export default async function ArticlePage({ params }: { params: { documentId: string}}) {
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+export default async function ArticlePage({ params }: any) {
   const { documentId } = await params;
 
   const article = await Articles.retrieve(documentId);
