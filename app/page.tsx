@@ -1,7 +1,6 @@
 // import Image from "next/image";
 
 import Articles, { Article } from "@/services/articles";
-import Image from "next/image";
 import Link from "next/link";
 
 export default async function Home() {

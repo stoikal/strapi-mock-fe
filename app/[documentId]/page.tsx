@@ -1,7 +1,5 @@
 import Articles from "@/services/articles";
-import { BlocksRenderer, type BlocksContent } from '@strapi/blocks-react-renderer';
-
-export default async function ArticlePage({ params }: any) {
+export default async function ArticlePage({ params }: { params: { documentId: string}}) {
   const { documentId } = await params;
 
   const article = await Articles.retrieve(documentId);
