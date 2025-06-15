@@ -16,7 +16,7 @@ export default async function Home() {
             <div className="hover:bg-amber-300 hover:text-black">
               <div className="w-60">
 
-                <img alt="cover" src={"http://localhost:1337" + item.Cover.url} />
+                <img alt="cover" src={item.Cover.url} />
               </div>
               <span>{item.Title}</span>
             </div>
